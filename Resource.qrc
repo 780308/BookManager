@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>x64/Debug/resource/pic/admin.png</file>
+        <file>x64/Debug/resource/pic/analysis.png</file>
+        <file>x64/Debug/resource/pic/book_mg.png</file>
+        <file>x64/Debug/resource/pic/books.png</file>
+        <file>x64/Debug/resource/pic/default.png</file>
+        <file>x64/Debug/resource/pic/exit.png</file>
+        <file>x64/Debug/resource/pic/exit_b.png</file>
+        <file>x64/Debug/resource/pic/exit_w.png</file>
+        <file>x64/Debug/resource/pic/info.png</file>
+        <file>x64/Debug/resource/pic/login.png</file>
+        <file>x64/Debug/resource/pic/qry.png</file>
+        <file>x64/Debug/resource/pic/record_mg.png</file>
+        <file>x64/Debug/resource/pic/return.png</file>
+        <file>x64/Debug/resource/pic/switch.png</file>
+        <file>x64/Debug/resource/pic/switch_w.png</file>
+        <file>x64/Debug/resource/pic/user.png</file>
+        <file>x64/Debug/resource/pic/user_mg.png</file>
+        <file>x64/Debug/resource/db/bk_mgr.db</file>
+        <file>x64/Debug/resource/pic/error.png</file>
+        <file>x64/Debug/resource/pic/question.png</file>
+        <file>x64/Debug/resource/pic/add.png</file>
+    </qresource>
+</RCC>

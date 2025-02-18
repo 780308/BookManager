@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AU_SingleBookClass</class>
+ <widget class="QDialog" name="AU_SingleBookClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>202</width>
+    <height>286</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>添加/修改</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QLabel{font: 14px '等线';}
+QLineEdit{border-radius:3px;border:1px solid gray;}
+QPushButton{border-radius:3px;background:#606266;color:white;font:14px ‘等线’;}
+QPushButton:pressed{background-color:black;}
+QComboBox{border-radius:3px;border:1px solid gray;}
+/*QSpinBox{border-radius:3px;border:1px solid gray;}*/
+QDialog{background:#dcdfe6;}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QLabel" name="lb_name">
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>书名</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="le_name">
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="lb_author">
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>作者</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="le_author">
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="lb_type1">
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>类别1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QComboBox" name="cb1">
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>悬疑</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>爱情</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>历史</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>科幻</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>奇幻</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>冒险</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>犯罪</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>推理</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>传记</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>自传</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>战争</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>政治</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>哲学</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>心理</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>经济</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>商业</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>文化</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>社会</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>科学</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>工具</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="lb_type2">
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>类别2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QComboBox" name="cb2">
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>悬疑</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>爱情</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>历史</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>科幻</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>奇幻</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>冒险</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>犯罪</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>推理</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>传记</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>自传</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>战争</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>政治</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>哲学</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>心理</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>经济</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>商业</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>文化</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>社会</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>科学</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>工具</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="lb_access">
+     <property name="minimumSize">
+      <size>
+       <width>40</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>在架数</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QSpinBox" name="spinBox">
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="minimum">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>40</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>15</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="btn_ok">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>确定</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="btn_cancel">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
